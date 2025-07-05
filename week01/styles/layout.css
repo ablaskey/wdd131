@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: Georgia, serif;
+}
+
+/* Header includes nav inside */
+header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+}
+
+.header-content {
+    padding: 20px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+nav li {
+    color: white;
+    font-weight: bold;
+}
+
+/* Main and Aside together in a content grid */
+main,
+aside {
+    padding: 20px;
+}
+
+main {
+    background-color: lightgray;
+}
+
+aside {
+    background-color: white;
+}
+
+/* Inner grid for main + aside */
+body>main,
+body>aside {
+    grid-area: content;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-area: content;
+    grid-template-columns: 3fr 1fr;
+}
+
+/* Place footer */
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
