@@ -1,0 +1,36 @@
+
+@media screen and (min-width: 600px) {
+    #menuBtn {
+        display: none;
+    }
+
+    #navMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 0;
+    }
+    
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: flex-end;
+    }
+    
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+
+    nav li a {
+        font-size: 1.1rem;
+    }
+}
