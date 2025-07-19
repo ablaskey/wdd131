@@ -1,0 +1,54 @@
+
+@media screen and (min-width:1000px) {
+    .data, .weather {
+        position: static;
+        margin: 1rem auto;
+        display: block;
+    }
+    .data, .weather {
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .weather-icon {
+        display: none;
+    }
+    .weather-emoji {
+        display: inline;
+        font-size: 2rem;
+        vertical-align: middle;
+    }
+}
+
+main {
+    position: relative;
+}
+
+.data, .weather {
+    position: absolute;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    font-size: 0.95rem;
+}
+
+.data {
+    top: 1rem;
+    left: 1rem;
+}
+
+.weather {
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.data h2, .weather h2 {
+    background-color: #F1BE02;
+    color: black;
+    margin: -1rem -1rem 0.5rem -1rem;
+    padding: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
