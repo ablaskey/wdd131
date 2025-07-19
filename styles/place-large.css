@@ -37,9 +37,17 @@
     .weather-icon {
         display: none;
     }
+    
     .weather-emoji {
-        display: inline;
-        font-size: 2rem;
+        display: none;
+    }
+
+    .weather h2::after {
+        content: "⛅";
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        margin-left: 0.5rem;
         vertical-align: middle;
     }
 }
