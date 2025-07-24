@@ -37,7 +37,8 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.data, .weather {
+.data,
+.weather {
     display: block;
     position: static;
     background-color: white;
@@ -50,7 +51,8 @@ h1 {
     font-size: 0.95rem;
 }
 
-.data h2, .weather h2 {
+.data h2,
+.weather h2 {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
@@ -66,7 +68,7 @@ h1 {
     height: auto;
 }
 
-@media screen and (max-width: 999px) {   
+@media screen and (max-width: 999px) {
     .weather img {
         display: block;
         margin: 1rem auto;

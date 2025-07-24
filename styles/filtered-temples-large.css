@@ -1,0 +1,57 @@
+@media screen and (min-width: 600px) {
+    #menuBtn {
+        display: none;
+    }
+
+    #navMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 0;
+        gap: 10px;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navigation a {
+        flex-direction: row;
+        padding: 1rem;
+        gap: 1rem;
+        justify-content: flex-end;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    main h1 {
+        display: block;
+        height: 40px;
+    }
+
+    main h2 {
+        display: block;
+        width: 100%;
+    }
+
+    figure {
+        width: 380px;
+        height: 420px;
+        padding: 1rem;
+    }
+
+    figure p {
+        font-size: 22px;
+    }
+
+    figure strong {
+        font-size: 18px;
+    }
+}
