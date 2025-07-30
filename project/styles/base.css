@@ -1,0 +1,140 @@
+:root {
+    --primary-color: #FCF8E8; /*Cosmic Latte*/
+    --secondary-color: #94B49F; /*Cambridge Blue*/
+    --accent1-color: #ECB390; /*Peach*/
+    --accent2-color: #DF7861; /*Burnt Sienna*/
+    --font-color: #000000; /*Black*/
+    --heading-font: "Allison", cursive;
+    --body-font: "Anonymous Pro", monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--primary-color);
+    color: var(--font-color);
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: .25rem solid #DF7861;
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    padding: .5rem 1rem;
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    background-color: var(--accent1-color);
+    border-radius: 3px;
+    text-decoration: underline;
+}
+
+#menuBtn {
+    background: none;
+    border: none;
+    color: var(--font-color);
+    font-size: 2rem;
+    cursor: pointer;
+    display: block;
+}
+
+#navMenu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#navMenu.open {
+    display: flex;
+}
+
+main {
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+figure {
+    width: 100px;
+    height: auto;
+    padding: 1rem;
+    margin: 10px auto;
+    text-align: center;
+}
+
+figure p {
+    font-size: 20px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: .85rem;
+}
+
+div {
+    margin: 5px 0;
+    padding: 1rem;
+}
+
+.wireframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+.wireframe figure {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    align-items: center;
+}
+
+.wireframe figcaption {
+    margin-top: .5rem;
+    font-size: .9rem;
+    color: var(--font-color);
+}
