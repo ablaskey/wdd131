@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form | WDD131</Form>
+    </title>
+    <meta name="description" content="Product Review Form">
+    <meta name="author" content="Allison Blaskey">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="review">
+            <fieldset>
+                <legend>Product Information</legend>
+                <label for="products">Product Name*<select name="products" id="products" required>
+                        <option value="">Select a Product...</option>
+                    </select>
+                </label>
+                <p>Overall Rating*</p>
+                <div class="stars">
+                    <input type="radio" name="stars" value="1" id="star1" required><label for="star1">&#9734;</label>
+                    <input type="radio" name="stars" value="2" id="star2"><label for="star2">&#9734;</label>
+                    <input type="radio" name="stars" value="3" id="star3"><label for="star3">&#9734;</label>
+                    <input type="radio" name="stars" value="4" id="star4"><label for="star4">&#9734;</label>
+                    <input type="radio" name="stars" value="5" id="star5"><label for="star5">&#9734;</label>
+                </div>
+                <div class="date">
+                    <label for="installDate">Date of Installation* <input type="date" name="installDate" id="installDate"
+                            required></label>
+                </div>
+                <div class="features">
+                    <p>Which features did you find useful in the product?</p>
+                    <p>(Check all that apply)</p>
+                    <label><input type="checkbox" name="durability" value="yes" id="durability">Durability</label>
+                    <label><input type="checkbox" name="ease" value="yes" id="ease">Ease of Use</label>
+                    <label><input type="checkbox" name="performance" value="yes" id="performance">Performance</label>
+                    <label><input type="checkbox" name="design" value="yes" id="design">Design</label>
+                </div>
+                <label for="review">Review (optional)</label>
+                <textarea name="review" id="review" rows="5" cols="30"></textarea><br>
+                <label>Your Name (optional)<input type="text" name="userName" id="userName"></label>
+                <p>* Required Fields</p>
+                <input type="submit" value="Post Review">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> | Allison Blaskey | Project Site Plan</p>
+        <p id="lastModified">Last updated: </p>
+    </footer>
+</body>
+
+</html>
