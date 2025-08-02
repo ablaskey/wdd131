@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Review Form | WDD131</Form>
-    </title>
-    <meta name="description" content="Product Review Form">
+    <title>Product Review Form | WDD131</title>
+    <meta name="description" content="product review form">
     <meta name="author" content="Allison Blaskey">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
@@ -33,7 +35,7 @@
                     <input type="radio" name="stars" value="5" id="star5"><label for="star5">&#9734;</label>
                 </div>
                 <div class="date">
-                    <label for="installDate">Date of Installation* <input type="date" name="installDate" id="installDate"
+                    <label for="installdate">Date of Installation* <input type="date" name="installdate" id="installdate"
                             required></label>
                 </div>
                 <div class="features">
@@ -46,7 +48,7 @@
                 </div>
                 <label for="review">Review (optional)</label>
                 <textarea name="review" id="review" rows="5" cols="30"></textarea><br>
-                <label>Your Name (optional)<input type="text" name="userName" id="userName"></label>
+                <label>Your Name (optional)<input type="text" name="username" id="username"></label>
                 <p>* Required Fields</p>
                 <input type="submit" value="Post Review">
             </fieldset>
