@@ -1,11 +1,11 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
     #menuBtn {
         display: none;
-        
+
     }
 
     #navMenu {
-        display: flex !important;
+        display: flex;
         flex-direction: row;
         justify-content: flex-end;
         gap: 1rem;
@@ -14,6 +14,10 @@
         padding: 0;
         margin: 0;
         color: black;
+    }
+
+    #navMenu.open {
+        display: flex;
     }
 
     #navMenu a {
@@ -26,5 +30,39 @@
     #navMenu a:hover {
         background-color: #EDB390;
         text-decoration: underline;
+    }
+
+    .index {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        align-items: center;
+        margin: auto;
+    }
+
+    .welcome {
+        font-size: 1rem;
+    }
+
+    .recipe {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .recipe img {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    .ingredients {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .instructions {
+        grid-column: 1 / span2;
+        grid-row: 2;
     }
 }

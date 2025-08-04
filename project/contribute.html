@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allison's Kitchen Recipes</title>
+    <meta name="description" content="WDD131 Project | Contribute Page">
+    <meta name="author" content="Allison Blaskey">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <script src="scripts/base.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Anonymous+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Allison's Kitchen Recipes</h1>
+        <img src="images/allisons_kitchen_logo.webp" alt="Allison's Kitchen logo">
+        <button id="menuBtn" aria-label="Toggle Navigation">☰</button>
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="recipe-list.html">Recipes</a>
+            <a href="contribute.html">Contribute</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Share your recipe</h2>
+        <form method="post" action="upload.php" enctype="multipart/form-data" class="contribute">
+            <fieldset>
+                <label>Name <input type="text" name="name" id="name" required></label>
+                <label>Email <input type="email" name="email" id="email" required></label>
+                <label>Recipe Name*<input type="text" name="recipe-name" id="recipe-name" required></label>
+                <label for="recipe">Recipe<textarea name="recipe" id="recipe" rows="5" cols="30"></textarea></label>
+                <label>Upload an image: <input type="file" id="image" name="image" accept="image/*"></label>
+                <p>* Required Fields</p>
+                <input type="submit" value="Share Recipe">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> | Allison Blaskey | WDD 131 Project</p>
+        <p id="lastModified">Last updated: </p>
+        <a href="reference.html">References</a>
+    </footer>
+</body>
+
+</html>
