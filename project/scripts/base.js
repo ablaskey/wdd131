@@ -96,4 +96,47 @@ menuButton.addEventListener("click", () => {
     }
 
     sortRecipes("alpha");
+
+    const form = document.getElementById("contactForm");
+    if (!form) return;
+
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const recipeName = document.getElementById("recipe-name");
+    const recipeText = document.getElementById("recipe");
+
+    if (name) {
+        name.value = localStorage.getItem("formName") || "";
+        name.addEventListener("input", () => {
+            localStorage.setItem("formName", name.value);
+        });
+    }
+
+    if (email) {
+        email.value = localStorage.getItem("formEmail") || "";
+        email.addEventListener("input", () => {
+            localStorage.setItem("formEmail", email.value);
+        });
+    }
+
+    if (recipeName) {
+        recipeName.value = localStorage.getItem("formRecipeName") || "";
+        recipeName.addEventListener("input", () => {
+            localStorage.setItem("formRecipeName", recipeName.value);
+        });
+    }
+
+    if (recipeText) {
+        recipeText.value = localStorage.getItem("formRecipe") || "";
+        recipeText.addEventListener("input", () => {
+            localStorage.setItem("formRecipe", recipeText.value);
+        });
+    }
+
+    form.addEventListener("submit", () => {
+        if (name) localStorage.removeItem("formName");
+        if (email) localStorage.removeItem("formEmail");
+        if (recipeName) localStorage.removeItem("formRecipeName");
+        if (recipeText) localStorage.removeItem("formRecipe");
+    });
 });
